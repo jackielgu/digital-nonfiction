@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -9,9 +7,8 @@
     <script type="text/javascript">
     $(document).ready(function(){
 
-         // $("#img1").hide();
-                $("#img2").fadeOut();
-                $("#img3").fadeOut();
+        $("#img2").fadeOut();
+        $("#img3").fadeOut();
         $(window).scroll(function(){
             //console.log($(window).scrollTop());
 
@@ -19,15 +16,12 @@
                 $("#img1").fadeIn();
                 $("#img2").fadeOut();
                 $("#img3").fadeOut();
-   
             }
                         
             if ($(window).scrollTop()>200 && $(window).scrollTop()<400) {
                 $("#img1").fadeOut();
                 $("#img2").fadeIn();
                 $("#img3").fadeOut();
-                
-
             }            
            
             if ($(window).scrollTop()>400) {
@@ -36,60 +30,8 @@
                 $("#img3").fadeIn();
                 
             }
-
-            // var top = $(window).scrollTop();
-            // if (top < 200) {
-            //     var first = 1 - (top/200);
-            //     console.log(first);
-            //     var second = top/200;
-            //     $('#img1').css({opacity:first});
-            //     $('#img2').css({opacity:second});
-            //     $('#img3').css({opacity:0});
-            // }
-
-            // if (top < 200 && top < 400) {
-            //     var second = 1 - (top/400);
-            //     var third = top/400;
-            //     $('#img1').css({opacity:0});
-            //     $('#img2').css({opacity:second});
-            //     $('#img3').css({opacity:third});
-            // }
-
         });
     });
-
-// $('img2.png').hide();
-// $('img3.png').hide();
-
-// $(function() {
-//     $(document).on("mousewheel", function() {
-//         console.log($(window).scrollTop());
- 
-
-//         if ($(document).scrollTop()>0 && $(document).scrollTop()<200) {
-//             $("#img1").fadeIn();
-//             $("#img2").fadeOut();
-//                 $("#img3").fadeOut();
-   
-//             }
-                        
-//             if ($(document).scrollTop()>200 && $(document).scrollTop()<400) {
-//                 $("#img1").fadeOut();
-//                 $("#img2").fadeIn();
-//                 $("#img3").fadeOut();
-                
-
-//             }            
-           
-//             if ($(document).scrollTop()>400) {
-//                 $("#img1").fadeOut();
-//                 $("#img2").fadeOut();
-//                 $("#img3").fadeIn();
-                
-//             } 
-        
-//     });
-// });
 
 </script>
   </head>
